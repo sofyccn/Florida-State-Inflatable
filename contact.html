@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentals - Bounce House Rentals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FLorida State Inflatables</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div id ="contact">
+    <h2>Contact Us</h2>
+    <form id= "contact-form" action="https://formspree.io/f/xdkaqjpy" method="POST">
+    <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email">
+    </div>
+    <div class="form-group">
+        <label for="phone">Your Phone Number:</label>
+        <input type="text" id="text" name="phone" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message"></textarea>
+    </div>
+    <div class = "form-group">
+        <label for="date">Preferred rental date:</label>
+        <input type="date" id="date" name="date" required>
+    </div>
+
+    <button type="submit">Submit</button>
+    <p id="form-message"></p>
+    </form>
+
+
+    <!-- Contact Information Section -->
+    <div class="contact-info">
+        <p>If you prefer to make a reservation by phone, feel free to contact us:</p>
+        <ul>
+            <li><strong>For Spanish:</strong> Call Sofia at <a href="tel:+SPANISH_PHONE_NUMBER">(656) 204 -6241</a></li>
+            <li><strong>For English:</strong> Call Kane at <a href="tel:+ENGLISH_PHONE_NUMBER">(585) 765 5737</a></li>
+        </ul>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2025 FLorida State Inflatables</p>
+</footer>
+
+</body>
+</html>

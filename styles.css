@@ -1,0 +1,382 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffbe00;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #e3f2fd;
+    padding: 20px;
+    text-align: center;
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cta {
+    background-color: #ffbe00;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta:hover {
+    background-color: #ff9500;
+}
+
+/* Featured Rentals Section */
+#featured-rentals {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rental-item {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    #featured-rentals {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* General form styling */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ h2 {
+    text-align: center;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+ }
+ 
+ .form-group {
+    margin-bottom: 15px;
+ }
+ 
+ label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+ }
+ 
+ input[type="text"],
+ input[type="email"],
+ textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+ }
+ 
+ /* Add focus effect */
+ input[type="text"]:focus,
+ input[type="email"]:focus,
+ textarea:focus {
+    border-color: #2a9d8f;
+    outline: none;
+ }
+ 
+ /* Styling for textarea */
+ textarea {
+    height: 150px;
+    resize: vertical;  /* Allows users to adjust height */
+ }
+ 
+ /* Submit button styling */
+ button[type="submit"] {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+ }
+ 
+ /* Add hover effect for button */
+ button[type="submit"]:hover {
+    background-color: #21867a;
+ }
+ 
+ /* Form message styling */
+ #form-message {
+    margin-top: 15px;
+    color: #2a9d8f;
+    text-align: center;
+    font-size: 18px;
+ }
+
+ /* Map Section Styling */
+.map-container {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-container h3 {
+    color: #2a9d8f;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.map-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.map-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.map-container li {
+    font-size: 16px;
+}
+
+.map-embed {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.map-embed iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Information Section Styling */
+.contact-info {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.contact-info h3 {
+    color: #2a9d8f;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #2a9d8f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* About Us Section Styling */
+.about-us {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about-us h2 {
+    color: #2a9d8f;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-us h3 {
+    color: #2a9d8f;
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.about-us ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: left;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.about-us li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.about-us ul li strong {
+    color: #2a9d8f;
+}
+
+.map-container {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-container h3 {
+    color: #2a9d8f;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.map-container p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.map-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.map-container li {
+    font-size: 16px;
+}
+
+.map-embed {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.map-embed iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+ 
+.offers {
+    padding: 30px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-top: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offers h2 {
+    color: #2a9d8f;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.offers ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.offers li {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.offers li strong {
+    color: #e76f51;
+}
+
+.offers p {
+    font-size: 18px;
+    color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}

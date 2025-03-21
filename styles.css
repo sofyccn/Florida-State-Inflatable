@@ -397,7 +397,7 @@ html {
     height: 200px; /* Keeps the aspect ratio */
     margin: 10px 0; /* Adds space around the logo */
 }
-#hero video {
+video {
     max-width: 100%;
     height: auto;
 }

@@ -380,3 +380,20 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
+.img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.image-size {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+.logo {
+    width: 200px; /* Adjust this to control size */
+    height: 200px; /* Keeps the aspect ratio */
+    margin: 10px 0; /* Adds space around the logo */
+}

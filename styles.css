@@ -393,8 +393,8 @@ html {
   }
 
 .logo {
-    width: 200px; /* Adjust this to control size */
-    height: 200px; /* Keeps the aspect ratio */
+    width: 100px; /* Adjust this to control size */
+    height: 100px; /* Keeps the aspect ratio */
     margin: 10px 0; /* Adds space around the logo */
 }
 /* Make the video container responsive */
@@ -403,6 +403,10 @@ html {
   max-width: 100%; /* Ensure it doesn't exceed the screen width */
   margin: 0 auto; /* Center the video container */
 }
-
+.responsive-video {
+  width: 50%; /* Ensure video takes up 100% of its container's width */
+  height: auto; /* Keep the aspect ratio intact */
+  max-width: 50%; /* Prevent video from exceeding container width */
+}
 
 

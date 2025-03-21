@@ -404,10 +404,5 @@ html {
   margin: 0 auto; /* Center the video container */
 }
 
-/* Make videos responsive */
-.responsive-video {
-  width: 100%; /* Ensure video takes up 100% of its container's width */
-  height: auto; /* Keep the aspect ratio intact */
-  max-width: 100%; /* Prevent video from exceeding container width */
-}
+
 

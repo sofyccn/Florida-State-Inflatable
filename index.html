@@ -3,53 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bounce House Rentals</title>
+    <meta name="description" content="Florida State Inflatables offers fun, safe, and affordable bounce house and water slide rentals across Tampa, Riverview, Wesley Chapel, and surrounding cities. Book your event today!">
+    <meta name="keywords" content="bounce house rentals Tampa, inflatable water slide rentals, party rentals Tampa, Florida State Inflatables, kids party rentals, event rentals Tampa Bay">
+    <meta name="author" content="Florida State Inflatables">
     <link rel="stylesheet" href="styles.css">
     
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Florida State Inflatables | Bounce House & Water Slide Rentals">
+    <meta property="og:description" content="Delivering smiles across Tampa Bay! Rent clean, safe inflatables for your next event.">
+    <meta property="og:image" content="logo.jpg">
+    <meta property="og:url" content="https://floridastateinflatables.netlify.app/">
+    <meta property="og:type" content="website">
+    
+    <!-- Business Schema for Google (Optional Advanced SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Florida State Inflatables",
+      "description": "We deliver bounce house and water slide rentals across Tampa and surrounding cities.",
+      "url": "https://floridastateinflatables.netlify.app/",
+      "telephone": "+16562046241",
+      "areaServed": ["Tampa", "Wesley Chapel", "Brandon", "Riverview", "Land O' Lakes", "Clearwater", "Saint Pete"],
+      "priceRange": "$$",
+      "image": "logo.jpg"
+    }
+    </script>
 </head>
 <body>
-    <header>
-        <h1>Florida State inflatables</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rentals.html">Rentals</a></li>
-                <li><a href="offers.html">Offers</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="hero">
-        <div class="video-container">
-            <video class="responsive-video" controls>
-            <source src="marketingvideo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <h2>Make Your Party Fun with Our Bounce Houses and Water Slides!</h2>
-        <a href="rentals.html" class="cta">View Rentals</a>
-    </section>
-    
-    <section id="featured-rentals">
-        <h2>Our Featured Rentals</h2>
-        <div class="rental-item">
-            <img src="combo_dino.JPG" class ="image-size" alt="Combo 1">
-            <h3>Combo 1: Bounce House + Water Slide</h3>
-            <p>Perfect for any event, featuring a large bounce area and thrilling water slide.</p>
-        </div>
-        <div class="rental-item">
-            <img src="combo_palmtrees.jpg" class ="image-size" alt="Combo 2">
-            <h3>Combo 2: Bounce House + Water Slide</h3>
-            <p>Exciting combo for summer fun! Cool off with the water slide.</p>
-        </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 FLorida State Inflatables</p>
-    </footer>
-    <script src="script.js"></script>
+  <header>
+    <h1>Florida State Inflatables</h1>
+    <nav role="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <section id="hero">
+    <div class="video-container">
+      <video class="responsive-video" autoplay muted loop>
+        <source src="marketingvideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <h2>Make Your Party Fun with Our Bounce Houses and Water Slides!</h2>
+    <a href="rentals.html" class="cta">View Rentals</a>
+  </section>
+
+  <section id="featured-rentals">
+    <div class="rental-item">
+      <img src="combo_dino.JPG" class="image-size" alt="Dinosaur Themed Bounce House and Water Slide Combo">
+      <h3>Combo 1: Bounce House + Water Slide</h3>
+      <p>Perfect for any event, featuring a large bounce area and thrilling water slide.</p>
+    </div>
+    <div class="rental-item">
+      <img src="combo_palmtrees.jpg" class="image-size" alt="Palm Tree Themed Bounce House and Water Slide Combo">
+      <h3>Combo 2: Bounce House + Water Slide</h3>
+      <p>Exciting combo for summer fun! Cool off with the water slide.</p>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <h2>What Our Customers Say</h2>
+  
+    <div class="review">
+      <p>"Florida State Inflatables made my son's birthday unforgettable! The bounce house was spotless and the delivery team was right on time. Highly recommend!"</p>
+      <h4>- Jessica M. | Tampa, FL</h4>
+    </div>
+  
+    <div class="review">
+      <p>"Excellent service and great pricing! The kids loved the water slide. Will definitely rent again for our next family event."</p>
+      <h4>- Carlos R. | Riverview, FL</h4>
+    </div>
+  
+    <div class="review">
+      <p>"From booking to pickup, everything was easy and stress-free. The combo bounce house kept the kids entertained for hours. Thank you so much!"</p>
+      <h4>- Megan S. | Wesley Chapel, FL</h4>
+    </div>
+  
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 Florida State Inflatables</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

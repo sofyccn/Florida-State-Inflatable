@@ -1,412 +1,389 @@
-/* Basic Reset */
+/* ===== Basic Reset ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-}
-
-/* Header Styles */
-header {
+  }
+  
+  /* ===== Header ===== */
+  header {
     background-color: #ffbe00;
-    color: #fff;
-    padding: 10px 0;
+    color: white;
+    padding: 15px 0;
     text-align: center;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     list-style: none;
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
+  }
+  
+  nav ul li {
+    display: inline-block;
     margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
+  }
+  
+  nav ul li a {
+    color: white;
     text-decoration: none;
-}
-
-/* Hero Section */
-#hero {
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #2a9d8f;
+  }
+  
+  /* ===== Hero Section ===== */
+  #hero {
     background-color: #e3f2fd;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
-}
-
-#hero img {
+  }
+  
+  #hero video {
     max-width: 100%;
     height: auto;
-}
-
-.cta {
-    background-color: #ffbe00;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.cta:hover {
-    background-color: #ff9500;
-}
-
-/* Featured Rentals Section */
-#featured-rentals {
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.rental-item {
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-@media (max-width: 768px) {
-    #featured-rentals {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-}
-/* General form styling */
-#contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f7f7f7;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
- }
- 
- h2 {
+  }
+  
+  .cta {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .cta:hover {
+    background-color: #21867a;
+    transform: scale(1.05);
+  }
+  
+  /* ===== Featured Rentals ===== */
+  #featured-rentals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+  
+  .rental-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-    color: #2a9d8f;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+  }
+  
+  .rental-item img,
+  .rental-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* ===== Contact Form ===== */
+  #contact-form {
+    max-width: 600px;
+    margin: 10px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .form-group {
     margin-bottom: 20px;
- }
- 
- .form-group {
-    margin-bottom: 15px;
- }
- 
- label {
-    display: block;
+  }
+  
+  label {
     font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
- }
- 
- input[type="text"],
- input[type="email"],
- textarea {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-sizing: border-box;
     font-size: 16px;
-    transition: border 0.3s ease-in-out;
- }
- 
- /* Add focus effect */
- input[type="text"]:focus,
- input[type="email"]:focus,
- textarea:focus {
-    border-color: #2a9d8f;
-    outline: none;
- }
- 
- /* Styling for textarea */
- textarea {
+  }
+  
+  textarea {
+    resize: vertical;
     height: 150px;
-    resize: vertical;  /* Allows users to adjust height */
- }
- 
- /* Submit button styling */
- button[type="submit"] {
-    background-color: #2a9d8f;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    width: 100%;
-    transition: background-color 0.3s ease-in-out;
- }
- 
- /* Add hover effect for button */
- button[type="submit"]:hover {
-    background-color: #21867a;
- }
- 
- /* Form message styling */
- #form-message {
-    margin-top: 15px;
-    color: #2a9d8f;
-    text-align: center;
-    font-size: 18px;
- }
+  }
 
- /* Map Section Styling */
-.map-container {
+  /*Contact*/
+  .contact-info-top {
+    background: #e3f2fd;
+    padding: 40px 20px;
     text-align: center;
-    padding: 20px;
-    margin-bottom: 30px;
-    background-color: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.map-container h3 {
+    margin: 40px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .contact-info-top h2 {
     color: #2a9d8f;
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-
-.map-container p {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.map-container ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    text-align: left;
-    display: inline-block;
     margin-bottom: 20px;
-}
-
-.map-container li {
-    font-size: 16px;
-}
-
-.map-embed {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.map-embed iframe {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Contact Information Section Styling */
-.contact-info {
-    text-align: center;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-}
-
-.contact-info h3 {
-    color: #2a9d8f;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.contact-info p {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.contact-info ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.contact-info li {
-    font-size: 18px;
+    font-size: 28px;
+  }
+  
+  .contact-info-top p {
+    font-size: 20px;
     margin-bottom: 10px;
-}
-
-.contact-info a {
+  }
+  
+  .contact-info-top a {
+    color: #2a9d8f;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .contact-info-top a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* ===== Contact Info Box ===== */
+  .contact-info {
+    background: #f9f9f9;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .contact-info a {
     color: #2a9d8f;
     text-decoration: none;
     font-weight: bold;
-}
-
-.contact-info a:hover {
+  }
+  
+  .contact-info a:hover {
     text-decoration: underline;
-}
-
-/* About Us Section Styling */
-.about-us {
-    padding: 40px;
-    background-color: #f9f9f9;
+  }
+  
+  /* ===== About Us Section ===== */
+  .about-us {
+    padding: 40px 20px;
+    background: #f9f9f9;
     border-radius: 10px;
-    margin-bottom: 40px;
     text-align: center;
-}
-
-.about-us h2 {
+  }
+  
+  .about-us img.logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+  }
+  
+  /* ===== Map Section ===== */
+  .delivery-info {
+    padding: 30px 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 700px; /* smaller width */
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .delivery-info h2 {
+    color: #2a9d8f;
+    margin-bottom: 15px;
+    font-size: 28px; /* smaller heading */
+  }
+  
+  .delivery-info p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .delivery-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    font-size: 16px; /* smaller table text */
+  }
+  
+  .delivery-table th,
+  .delivery-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .delivery-table th {
+    background-color: #2a9d8f;
+    color: white;
+  }
+  
+  .delivery-table td {
+    background-color: #f9f9f9;
+  }
+  
+  .note {
+    font-size: 14px;
+    color: #777;
+  }
+    
+  
+  /* ===== Offers Section ===== */
+  .offers {
+    background: #fff3cd;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 700px;
+    text-align: center;
+  }
+  
+  .offers ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .offers li {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  /* Badge for Limited Offers */
+  .badge {
+    background-color: #ff5733;
+    color: white;
+    font-size: 14px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-left: 8px;
+  }
+  
+  /* ===== Footer ===== */
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  /* ===== Mobile Responsiveness ===== */
+  @media (max-width: 768px) {
+    #featured-rentals {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
+  .reviews {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .reviews h2 {
+    color: #2a9d8f;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .review {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .review p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .review h4 {
+    font-size: 16px;
+    color: #777;
+    font-style: italic;
+  }
+  
+  h2 {
     color: #2a9d8f;
     font-size: 32px;
     margin-bottom: 20px;
-}
-
-.about-us p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.about-us h3 {
-    color: #2a9d8f;
-    font-size: 26px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-.about-us ul {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 30px;
-    text-align: left;
-    display: inline-block;
-    font-size: 18px;
-}
-
-.about-us li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-.about-us ul li strong {
-    color: #2a9d8f;
-}
-
-.map-container {
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 30px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.map-container h3 {
-    color: #2a9d8f;
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-
-.map-container p {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.map-container ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    text-align: left;
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-.map-container li {
-    font-size: 16px;
-}
-
-.map-embed {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.map-embed iframe {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
- 
-.offers {
-    padding: 30px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    margin-top: 40px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.offers h2 {
-    color: #2a9d8f;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.offers ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.offers li {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.offers li strong {
-    color: #e76f51;
-}
-
-.offers p {
-    font-size: 18px;
-    color: #333;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-}
-.image-size {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
   }
 
-.logo {
-    width: 100px; /* Adjust this to control size */
-    height: 100px; /* Keeps the aspect ratio */
-    margin: 10px 0; /* Adds space around the logo */
-}
-/* Make the video container responsive */
-.video-container {
-  width: 100%;
-  max-width: 100%; /* Ensure it doesn't exceed the screen width */
-  margin: 0 auto; /* Center the video container */
-}
-.responsive-video {
-  width: 50%; /* Ensure video takes up 100% of its container's width */
-  height: auto; /* Keep the aspect ratio intact */
-  max-width: 50%; /* Prevent video from exceeding container width */
-}
+  /* ======Rentals======= */
+  #rental-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+    background: #f9f9f9;
+  }
+  
+  .rental-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .rental-item h3 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .rental-item p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .rental-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
 
 

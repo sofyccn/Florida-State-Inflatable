@@ -3,64 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rentals - Bounce House Rentals</title>
+    <meta name="description" content="Florida State Inflatables offers fun, safe, and affordable bounce house and water slide rentals across Tampa, Riverview, Wesley Chapel, and surrounding cities. Book your event today!">
+    <meta name="keywords" content="bounce house rentals Tampa, inflatable water slide rentals, party rentals Tampa, Florida State Inflatables, kids party rentals, event rentals Tampa Bay">
+    <meta name="author" content="Florida State Inflatables">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Florida State Inflatables | Bounce House & Water Slide Rentals">
+    <meta property="og:description" content="Delivering smiles across Tampa Bay! Rent clean, safe inflatables for your next event.">
+    <meta property="og:image" content="logo.jpg">
+    <meta property="og:url" content="https://floridastateinflatables.netlify.app/">
+    <meta property="og:type" content="website">
+    
+    <!-- Business Schema for Google (Optional Advanced SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Florida State Inflatables",
+      "description": "We deliver bounce house and water slide rentals across Tampa and surrounding cities.",
+      "url": "https://floridastateinflatables.netlify.app/",
+      "telephone": "+16562046241",
+      "areaServed": ["Tampa", "Wesley Chapel", "Brandon", "Riverview", "Land O' Lakes", "Clearwater", "Saint Pete"],
+      "priceRange": "$$",
+      "image": "logo.jpg"
+    }
+    </script>
 </head>
 <body>
-    <header>
-        <h1>Florida State Inflatables</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rentals.html">Rentals</a></li>
-                <li><a href="offers.html">Offers</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Florida State Inflatables</h1>
+    <nav role="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<div id ="contact">
-    <form id= "contact-form" action="https://formspree.io/f/xdkaqjpy" method="POST">
-    <div class="form-group">
+  <section id="contact-info" class="contact-info-top">
+    <h2>Call Us Directly 📞</h2>
+    <p><strong>For Spanish:</strong> <a href="tel:+16562046241">Sofia - (656) 204-6241</a></p>
+    <p><strong>For English:</strong> <a href="tel:+15857655737">Kane - (585) 765-5737</a></p>
+    <p>Or use the form below and we'll get back to you ASAP!</p>
+  </section>
+
+  <section id="contact">
+    <form id="contact-form" method="POST">
+      <div class="form-group">
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required>
-    </div>
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email">
-    </div>
-    <div class="form-group">
-        <label for="phone">Your Phone Number:</label>
-        <input type="text" id="text" name="phone" required>
-    </div>
-    <div class="form-group">
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message"></textarea>
-    </div>
-    <div class = "form-group">
-        <label for="date">Preferred rental date:</label>
-        <input type="date" id="date" name="date" required>
-    </div>
+        <input type="email" id="email" name="email" required>
+      </div>
 
-    <button type="submit">Submit</button>
-    <p id="form-message"></p>
+      <div class="form-group">
+        <label for="phone">Your Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Preferred Rental Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="cta">Submit</button>
     </form>
 
+  </section>
 
-    <!-- Contact Information Section -->
-    <div class="contact-info">
-        <p>If you prefer to make a reservation by phone, feel free to contact us:</p>
-        <ul>
-            <li><strong>For Spanish:</strong> Call Sofia at <a href="tel:+SPANISH_PHONE_NUMBER">(656) 204 -6241</a></li>
-            <li><strong>For English:</strong> Call Kane at <a href="tel:+ENGLISH_PHONE_NUMBER">(585) 765 5737</a></li>
-        </ul>
-    </div>
-</div>
-<footer>
-    <p>&copy; 2025 FLorida State Inflatables</p>
-</footer>
+  <footer>
+    <p>&copy; 2025 Florida State Inflatables</p>
+  </footer>
 
 </body>
 </html>

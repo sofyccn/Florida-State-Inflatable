@@ -52,19 +52,9 @@ This website is deployed on Netlify with continuous deployment from the GitHub r
 3. Configure build settings
 4. Deploy!
 
-## 📸 Screenshots
-
-Visit the live site to see:
-- Modern, vibrant homepage with hero section
-- Featured inflatable rentals (bounce houses, water slides, combo units)
-- Customer testimonials section with real reviews
-- Clean, professional design optimized for all devices
-
-[Add screenshots or link to your video recording here]
-
 ## 🌐 Live Demo
 
-Visit the live website: [https://floridastateinflatables.netlify.app/](https://floridastateinflatables.netlify.app/)
+
 
 ## 📞 Contact
 

@@ -56,16 +56,3 @@ This website is deployed on Netlify with continuous deployment from the GitHub r
 
 [![Watch the demo](https://www.youtube.com/watch?v=SCcaArgSjvU)](https://www.youtube.com/watch?v=SCcaArgSjvU)
 
-## 📞 Contact
-
-**Florida State Inflatables**
-- 📍 Location: Tampa, Florida and surrounding areas
-- 📱 Contact: Available through the website
-- 🌐 Website: [floridastateinflatables.netlify.app](https://floridastateinflatables.netlify.app/)
-
-For rental inquiries, bookings, or questions about our inflatable options, please visit our website or reach out directly.
-
-## 🤝 Contributing
-
-This is a private business website. For suggestions or issues, please contact the repository owner.
-
